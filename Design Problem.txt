@@ -1,11 +1,33 @@
-Design Problem - Tech With Tim School of Programmers
+# Tech With Tim School of Programmers - System Design
 
-The Tech With Tim school of programmers needs a new system to track all of its students, professors and courses. It wants to keep track of what courses are offered, who teaches each course and which students are enrolled in those courses. It would also like to be able to track the grades of each of its students across all courses. For each student and professor the school needs to know their address, phone number, name and age.
+## Overview
 
-Each course has a maximum and minimum number of students that they can enrol. If the minimum number of students is not reached then the course will be cancelled. Each course is taught by at least one professor but sometimes may be taught by many. 
+The Tech With Tim School of Programmers is in need of a new system to efficiently manage its students, professors, and courses. The system should facilitate tracking of courses offered, faculty teaching assignments, student enrollments, and grades. Additionally, it must handle personal information such as addresses, phone numbers, names, and ages for both students and professors.
 
-Professors are salaried employees at the Tech With Tim School of programmers and therefore we need to keep track of how much they make each year. If a professor teaches more than 4 courses in a semester then they are granted a one time bonus of $20,000. 
+## Course Management
 
-Students can be both local or international students and full or part time. A student is considered a part time student if they are enrolled in 1 or 2 courses during any given semester. The maximum amount of courses a student may be enrolled in at one time is 6. Students receive grades from each course, these grades are numeric in the range of 0-100. Any students that have an average grade across all enrolled courses lower than 60% is said to be on academic probation. 
+- Each course has a minimum and maximum enrollment capacity. If the minimum enrollment is not met, the course will be canceled.
+- Courses can be taught by one or more professors.
+- The school needs to track grades for each student across all courses.
 
-NOTE: This system will be reset and updated at the end of each semester
+## Professor Details
+
+- Professors are salaried employees, and the system must calculate their annual income.
+- Professors teaching more than 4 courses in a semester receive a one-time bonus of $20,000.
+
+## Student Classification
+
+- Students can be local or international, and they can be full-time or part-time.
+- Part-time status is defined as enrollment in 1 or 2 courses during a semester.
+- The maximum course load for a student is 6 courses.
+
+## Academic Performance
+
+- Students receive numeric grades in the range of 0-100 for each course.
+- Students with an average grade below 60% across all enrolled courses are placed on academic probation.
+
+## System Lifecycle
+
+- The system will be reset and updated at the end of each semester.
+
+This design problem outlines the key requirements for the system, covering course management, professor details, student classification, and academic performance tracking. The system is expected to efficiently handle the dynamic aspects of a school semester.
